@@ -1,14 +1,12 @@
-var a = 7;
-var b = 5;
+var myString = 'I\'m a "fun ninja" string';
 
+if (myString.indexOf("ninja") === -1){
 
-if (isNaN(a)){
+    console.log("the word ninja is not in the string")
 
-    console.log("that int even a number, thickie")
-
-}else {
-
-    console.log("meaning of life is " + (a * b));
 }
+else{
 
+    console.log("the word ninja starts at position " + myString.indexOf("ninja"));
 
+}
