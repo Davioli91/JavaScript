@@ -1,5 +1,6 @@
 body {
     background-color: rgb(134, 199, 90);
+    color: black;
 }
 #message{
     width: 400px;
