@@ -1,12 +1,26 @@
-var myString = 'I\'m a "fun ninja" string';
+var myArray = new Array();
+myArray[0] = 8;
+myArray[1] = "hello";
 
-if (myString.indexOf("ninja") === -1){
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Dawid";
+myCar.drive = function() { console.log("now driving");};
 
-    console.log("the word ninja is not in the string")
+myCar.drive();
 
-}
-else{
+var myCar2 = {
 
-    console.log("the word ninja starts at position " + myString.indexOf("ninja"));
+    maxSpeed: 70,
+    driver: "Davioli",
+    drive: function(speed, time){
+        console.log(speed * time);
+    }
 
-}
+};
+
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
+
+
+
